@@ -1,6 +1,31 @@
-#conda create --name TestEnv Python=3.6
-#source activate TestEnv
-#source deactivate TestEnv
+To set up conda test environment:
+conda create --name TestEnv Python=3.6
+source activate TestEnv
+source deactivate TestEnv
+
+
+
+To set up Virtualenv test environment:
+activate python in powershell with path above
+>>import venv
+>>venv.create('H:\\Development\\test_environ')
+
+To use Virtualenv environment:
+cd to where dir with test_environ
+type in powershell: .\test_environ\Scripts\activate
+
+
+To clone a Virtualenv environment:
+pip install virtualenv-clone
+
+virtualenv-clone /path/old-virtualenv /path/new-virtualenv
+
+
+1. the environ will prob have no libraries, so first download ez_setup.py
+2. activate your environ and run ez_setup.py (download it first)
+3. install pip with a .whl,     python \\gold.rtgold.nima.mil\home\nde_users_27\clunieit\RedirectedData\Downloads\pip-9.0.1.tar\dist\pip-9.0.1\setup.py install
+
+
 
 #pip freeze > requirements.txt
 #pip install -r requirements.txt
