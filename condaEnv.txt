@@ -1,9 +1,3 @@
-To set up conda test environment:
-conda create --name TestEnv Python=3.6
-source activate TestEnv
-source deactivate TestEnv
-
-
 
 To set up Virtualenv test environment:
 activate python in powershell with path above
@@ -26,6 +20,13 @@ virtualenv-clone /path/old-virtualenv /path/new-virtualenv
 3. install pip with a .whl,     python \\gold.rtgold.nima.mil\home\nde_users_27\clunieit\RedirectedData\Downloads\pip-9.0.1.tar\dist\pip-9.0.1\setup.py install
 
 
+
+
+To set up conda test environment:
+conda create --name TestEnv Python=3.6
+source activate TestEnv
+source deactivate TestEnv
+conda info --envs  #list envs
 
 #pip freeze > requirements.txt
 #pip install -r requirements.txt
